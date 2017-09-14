@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#41dddf</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#E53A3A</color>
+    <color name="Red">#ff0000</color>
+    <color name="colorRedPress">#A00303</color>
+    <color name="colorBgGray">#E1E1E6</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorHalfTransparentWhite">#99FFFFFF</color>
+    <color name="colorHalfTransparentWhiteSpeed">#80FFFFFF</color>
+    <color name="colorHalfTransparentWhiteSpeedChecked">#40FFFFFF</color>
+    <color name="colorHalfTransparentBlack">#55666666</color>
+    <color name="colorCommonHalfTransparentBg">#66000000</color>
+    <color name="colorLightBlue">#42dddf</color>
+    <color name="black">#000000</color>
+    <color name="red">#80FF0000</color>
+    <color name="green">#8000CD00</color>
+    <color name="blue">#800000EE</color>
+    <color name="white">#ffffff</color>
+    <color name="colorEditUnderLine">#42dcde</color>
+    <color name="colorDotYellow">#FFFA3A</color>
+    <color name="colorDotBlue">#166E86</color>
+    <color name="colorBgHeaderHalf">#14dddddd</color>
+    <color name="colorBgItemHalf">#14ffffff</color>
+    <color name="colorBgItemHalfPress">#5042dddf</color>
+
+    <color name="colorBgSpeedHalf">#64000000</color>
+    <color name="colorBgSpeedHalfPress">#9941dddf</color>
+    <color name="colorCropBg">#9941dddf</color>
+
+    <color name="effectBlue">#806fc9c7</color>
+    <color name="effectYellow">#80e5c55b</color>
+    <color name="effectGreen">#804fc592</color>
+    <color name="effectWhite">#80ffffff</color>
+    <color name="effectBgGray">#80CD00CD</color>
+    <color name="effectBlack">#80000000</color>
+    <color name="effectOrange">#80fa540d</color>
+    <color name="effectSkyBlue">#80118ffd</color>
+</resources>

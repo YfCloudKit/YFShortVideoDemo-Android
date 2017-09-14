@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_preview_buttons"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_video_record">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_8">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:background="@drawable/select_back"/>
+
+        <ImageButton
+            android:id="@+id/ib_switch"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/select_switch"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1.1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/tb_beauty"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/select_beauty"
+            android:checked="true"
+            android:textOff=""
+            android:textOn=""/>
+
+        <ImageButton
+            android:id="@+id/ib_effects"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/select_ar"/>
+
+
+        <ImageButton
+            android:id="@+id/ib_filter_style"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/select_filter"/>
+
+
+        <ImageButton
+            android:id="@+id/ib_music_seek"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/select_cut_music"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_speed"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_slower"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_left_circle_rect"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="@string/speed_slower"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18"/>
+
+        <RadioButton
+            android:id="@+id/rb_slow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_center_rect"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/speed_slow"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18"/>
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_center_rect"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="@string/speed_normal"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18"/>
+
+        <RadioButton
+            android:id="@+id/rb_fast"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_center_rect"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="@string/speed_fast"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18"/>
+
+        <RadioButton
+            android:id="@+id/rb_faster"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right_circle_rect"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="@string/speed_faster"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dp_28"
+        android:layout_weight="0.3"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_56"
+            android:background="@drawable/select_delete"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/dp_56"
+            android:background="@drawable/select_merge"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

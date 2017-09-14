@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_record_button"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_video_record">
+
+
+    <com.yfcloud.shortvideo.widget.RoundButton
+        android:id="@+id/ib_record"
+        android:layout_width="@dimen/dp_66"
+        android:layout_height="@dimen/dp_64"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_28"
+        android:background="@drawable/ic_record"
+        android:gravity="center"
+        android:text="@string/press_to_record"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>

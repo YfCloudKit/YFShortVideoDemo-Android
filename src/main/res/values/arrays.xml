@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--private static final String[] m_item_names = {"tiara.mp3", "item0208.mp3", "einstein.mp3", "YellowEar.mp3", "PrincessCrown.mp3",
+            "Mood.mp3", "Deer.mp3", "BeagleDog.mp3", "item0501.mp3", "ColorCrown.mp3", "item0210.mp3", "HappyRabbi.mp3",
+            "item0204.mp3", "hartshorn.mp3"
+    };-->
+    <array name="ar">
+        <item>tiara.mp3</item>
+        <item>item0208.mp3</item>
+        <item>einstein.mp3</item>
+        <item>PrincessCrown.mp3</item>
+        <item>Mood.mp3</item>
+        <item>Deer.mp3</item>
+        <item>BeagleDog.mp3</item>
+        <item>item0501.mp3</item>
+        <item>ColorCrown.mp3</item>
+        <item>item0210.mp3</item>
+        <item>HappyRabbi.mp3</item>
+        <item>item0204.mp3</item>
+        <item>hartshorn.mp3</item>
+    </array>
+    <array name="ar_name">
+        <item>鲜花</item>
+        <item>鱼</item>
+        <item>爱因斯坦</item>
+        <item>皇冠</item>
+        <item>心情</item>
+        <item>鹿</item>
+        <item>狗</item>
+        <item>领结</item>
+        <item>斑斓</item>
+        <item>长颈鹿</item>
+        <item>兔子</item>
+        <item>兔子2</item>
+        <item>长颈鹿2</item>
+    </array>
+    <array name="style_filter_name">
+        <item>美白</item>
+        <item>浪漫</item>
+        <item>温柔</item>
+        <item>童话</item>
+        <item>复古</item>
+        <item>白猫</item>
+        <item>拿铁</item>
+        <item>黑白</item>
+    </array>
+    <array name="filter_name">
+        <item>波浪</item>
+        <item>灵魂出窍</item>
+        <item>九宫格</item>
+        <item>格纹</item>
+        <item>镜像</item>
+        <item>黑白</item>
+        <item>抖动</item>
+    </array>
+
+    <array name="logo_name">
+        <item>logo1</item>
+        <item>logo2</item>
+        <item>logo3</item>
+        <item>logo4</item>
+        <item>logo5</item>
+    </array>
+
+    <array name="gif_name">
+        <item>变帅</item>
+        <item>卖萌</item>
+        <item>鬼脸</item>
+        <item>吃瓜</item>
+        <item>喔油</item>
+    </array>
+    <array name="time_effect_name">
+        <item>时光倒流</item>
+        <item>慢动作</item>
+        <item>重复动作</item>
+    </array>
+
+    <array name="music_name">
+        <item>music/xiaoxingyun.mp3</item>
+        <item>music/creep.mp3</item>
+        <item>music/dongdongdong.mp3</item>
+        <item>music/lalala.mp3</item>
+        <item>music/zalebaba.mp3</item>
+
+        <item>music/cant_comlpain.mp3</item>
+        <item>music/choose_yours_seeds.mp3</item>
+        <item>music/deep_down_low.mp3</item>
+        <item>music/eyes_closed.mp3</item>
+        <item>music/holiday.mp3</item>
+        <item>music/hula_hoop.mp3</item>
+        <item>music/in2.mp3</item>
+        <item>music/keep_me_from_you.mp3</item>
+        <item>music/make_me_feel.mp3</item>
+        <item>music/mimimi.mp3</item>
+        <item>music/on_the_floor.mp3</item>
+        <item>music/really_want.mp3</item>
+        <item>music/rock_that_body.mp3</item>
+        <item>music/sway.mp3</item>
+        <item>music/talking_shit_freestyle.mp3</item>
+        <item>music/you_lost_me.mp3</item>
+        <item>music/bufulaidou.mp3</item>
+        <item>music/little_jump_frog.mp3</item>
+        <item>music/when_open_potato_chip_bag.mp3</item>
+        <item>music/magic_laugh.mp3</item>
+    </array>
+
+    <array name="music_saved_name">
+        <item>小幸运.mp3</item>
+        <item>Creep.mp3</item>
+        <item>咚咚咚.mp3</item>
+        <item>LaLaLa.mp3</item>
+        <item>咋了爸爸.mp3</item>
+
+        <item>Can Not Complain.mp3</item>
+        <item>Choose Yours Seeds.mp3</item>
+        <item>Deep Down Low.mp3</item>
+        <item>Eyes Closed.mp3</item>
+        <item>Holiday.mp3</item>
+        <item>Hula Hoop.mp3</item>
+        <item>In2.mp3</item>
+        <item>Keep Me From You.mp3</item>
+        <item>Make Me Feel.mp3</item>
+        <item>Mimimi.mp3</item>
+        <item>On the Floor.mp3</item>
+        <item>Really Want.mp3</item>
+        <item>Rock That Body.mp3</item>
+        <item>Sway.mp3</item>
+        <item>Talking Shit Freestyle.mp3</item>
+        <item>You lost Me.mp3</item>
+        <item>不服来抖.mp3</item>
+        <item>小跳蛙.mp3</item>
+        <item>当你打开膨胀的薯片袋子.mp3</item>
+        <item>魔性笑声.mp3</item>
+    </array>
+
+
+    <array name="effect_gif_name">
+        <item>soul_obe.gif</item>
+        <item>nine_window.gif</item>
+        <item>70s.gif</item>
+        <item>mirror.gif</item>
+        <item>black_magic.gif</item>
+        <item>hallucination.gif</item>
+        <item>origin.gif</item>
+        <item>stretch.gif</item>
+        <item>time_back.gif</item>
+        <item>shake.gif</item>
+        <item>slow_action.gif</item>
+    </array>
+</resources>

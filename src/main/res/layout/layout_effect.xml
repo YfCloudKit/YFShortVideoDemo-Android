@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_effect"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:showIn="@layout/activity_video_record">
+
+    <RelativeLayout
+        android:id="@+id/rl_effect_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_108"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHalfTransparentBlack"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableTop="@drawable/select_ar"
+            android:text="@string/ar"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16"/>
+
+    </RelativeLayout>
+</RelativeLayout>

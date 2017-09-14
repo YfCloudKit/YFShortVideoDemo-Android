@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yfcloud.shortvideo.activity.VideoCutActivity">
+
+    <com.yunfan.player.widget.YfPlayerKit
+        android:id="@+id/yf_player_kit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_cut_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fl_crop"
+                android:background="@color/colorHalfTransparentBlack">
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16"/>
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="@dimen/dp_64"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16"/>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_crop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_56"
+                android:layout_marginBottom="@dimen/dp_8"
+                >
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/id_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <com.yfcloud.shortvideo.widget.VideoCropBar
+                    android:id="@+id/video_crop_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorHalfTransparentBlack"
+                    />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/music_cut_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorHalfTransparentBlack">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_vido_editor"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:text="@string/cut_video"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_16"/>
+
+                <Button
+                    android:id="@+id/btn_pass"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:background="@drawable/select_ok"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_48"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@color/colorBgItemHalfPress"/>
+    </RelativeLayout>
+</FrameLayout>

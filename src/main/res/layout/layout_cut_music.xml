@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_cut_music"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:showIn="@layout/activity_video_record">
+
+    <!--<com.yfcloud.shortvideo.widget.AudioCutView
+        android:id="@+id/audio_cut_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/music_cut_bottom"
+        android:layout_alignParentBottom="true"/>-->
+
+    <RelativeLayout
+        android:id="@+id/music_cut_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorHalfTransparentBlack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/cut_music"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageButton
+            android:id="@+id/ib_select_start_time_ok"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/select_ok"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

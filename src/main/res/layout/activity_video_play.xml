@@ -1,0 +1,209 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/black"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yunfan.encoder.widget.YfGlSurfaceView
+            android:id="@+id/yf_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/start_pause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_play"
+            android:onClick="startPause"/>
+
+        <ImageView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/seek_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="160dp">
+
+
+        <com.yfcloud.shortvideo.widget.YfController
+            android:id="@+id/controller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        </com.yfcloud.shortvideo.widget.YfController>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:background="@drawable/ic_record_start"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableTop="@drawable/select_menu"
+            android:text="@string/effect"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableTop="@drawable/select_ok"
+            android:text="保存"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/recorder_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_108"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_filter"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@null"
+                android:drawableTop="@drawable/select_filter"
+                android:text="特效"
+                android:textColor="@android:color/white"/>
+
+
+            <Button
+                android:id="@+id/btn_logo"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@null"
+                android:drawableTop="@drawable/select_logo"
+                android:text="水印"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btn_gif"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@null"
+                android:drawableTop="@drawable/select_gif"
+                android:text="Gif"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_reverse"
+                android:layout_width="@dimen/dp_64"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/select_reverse"
+                android:text="@string/time_effect"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_2"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/save_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg_save"/>
+
+            <ImageView
+                android:id="@+id/save_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/bg_save_lizi"/>
+
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="准备中..."
+                android:textColor="@color/white"/>
+
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
