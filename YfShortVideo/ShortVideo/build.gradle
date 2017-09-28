@@ -1,22 +1,3 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        jcenter()
-        maven { url 'https://jitpack.io' }
-    }
-}
-
 apply plugin: 'com.android.application'
 
 android {
@@ -28,7 +9,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
-        versionName "1.0.5"
+        versionName "1.0.6"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -76,11 +57,15 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.github.YfCloudKit.YfKitLibrary:FFMpeg-decoder-encoder-https:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:MuxerLib-editor:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:YfAR:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:YfAuthentication:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:YfEncoderKit:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:YfFilter:-v1.0.0'
-    compile 'com.github.YfCloudKit.YfKitLibrary:YfMediaPlayer:-v1.0.0'
+//    compile project(':YfAuthentication')
+//    compile project(':yfEncoderKit')
+//    compile project(':YfKit')
+//    compile project(':YfMediaPlayer')
+    compile 'com.github.YfCloudKit.YfKitLibrary:FFMpeg-decoder-encoder-https:-SNAPSHOT'
+    compile 'com.github.YfCloudKit.YfKitLibrary:MuxerLib-editor:-SNAPSHOT'
+    compile 'com.github.YfCloudKit.YfKitLibrary:YfAR:-SNAPSHOT'
+    compile 'com.github.YfCloudKit.YfKitLibrary:YfAuthentication:-SNAPSHOT'
+    compile 'com.github.YfCloudKit.YfKitLibrary:YfEncoderKit:-SNAPSHOT'
+//    compile 'com.github.YfCloudKit.YfKitLibrary:YfFilter:-SNAPSHOT'
+    compile 'com.github.YfCloudKit.YfKitLibrary:YfMediaPlayer:-SNAPSHOT'
 }

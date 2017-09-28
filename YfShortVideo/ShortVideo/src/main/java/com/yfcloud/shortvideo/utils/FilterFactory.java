@@ -4,28 +4,27 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.yfcloud.shortvideo.R;
-import com.yunfan.encoder.filter.YfAntiqueFilter;
 import com.yunfan.encoder.filter.YfBlackMagicFilter;
-import com.yunfan.encoder.filter.YfBlackWhiteFilter;
-import com.yunfan.encoder.filter.YfCrayonFilter;
 import com.yunfan.encoder.filter.YfFilterFactory;
 import com.yunfan.encoder.filter.YfGifFilter;
-import com.yunfan.encoder.filter.YfLatteFilter;
-import com.yunfan.encoder.filter.YfLookupFilter;
 import com.yunfan.encoder.filter.YfMirrorFilter;
 import com.yunfan.encoder.filter.YfMultiWindowFilter;
-import com.yunfan.encoder.filter.YfRomanticFilter;
 import com.yunfan.encoder.filter.YfShakeFilter;
-import com.yunfan.encoder.filter.YfSketchFilter;
-import com.yunfan.encoder.filter.YfSkinWhiteFilter;
 import com.yunfan.encoder.filter.YfSoulDazzleFilter;
 import com.yunfan.encoder.filter.YfTartanFilter;
-import com.yunfan.encoder.filter.YfTenderFilter;
 import com.yunfan.encoder.filter.YfWaterMarkFilter;
 import com.yunfan.encoder.filter.YfWaveFilter;
 import com.yunfan.encoder.filter.YfWhirlpoolFilter;
-import com.yunfan.encoder.filter.YfWhiteCatFilter;
+import com.yunfan.encoder.style.YfAntiqueFilter;
+import com.yunfan.encoder.style.YfBlackWhiteFilter;
+import com.yunfan.encoder.style.YfCrayonFilter;
+import com.yunfan.encoder.style.YfLatteFilter;
+import com.yunfan.encoder.style.YfLookupFilter;
+import com.yunfan.encoder.style.YfRomanticFilter;
+import com.yunfan.encoder.style.YfSketchFilter;
+import com.yunfan.encoder.style.YfSkinWhiteFilter;
+import com.yunfan.encoder.style.YfTenderFilter;
+import com.yunfan.encoder.style.YfWhiteCatFilter;
 
 import java.io.IOException;
 
@@ -40,20 +39,6 @@ public class FilterFactory {
     public FilterFactory(Context context) throws IllegalAccessException {
         mContext = context;
         mFactory = new YfFilterFactory.Factory(context);
-    }
-
-    public YfCrayonFilter createCrayonFilter(int filterIndex) {
-        YfCrayonFilter temp = mFactory.createCrayonFilter();
-        temp.setIndex(filterIndex);
-        temp.setRenderInSpecificPts(true);
-        return temp;
-    }
-
-    public YfSketchFilter createSketchFilter(int filterIndex) {
-        YfSketchFilter temp = mFactory.createSketchFilter();
-        temp.setIndex(filterIndex);
-        temp.setRenderInSpecificPts(true);
-        return temp;
     }
 
     public YfWaveFilter createWaveFilter(int filterIndex) {
@@ -156,50 +141,64 @@ public class FilterFactory {
     //===================风格滤镜====================
 
     public YfSkinWhiteFilter createSkinWhiteFilter(int filterIndex) {
-        YfSkinWhiteFilter temp = mFactory.createSkinWhiteFilter();
+        YfSkinWhiteFilter temp = new YfSkinWhiteFilter();
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfRomanticFilter createRomanticFilter(int filterIndex) {
-        YfRomanticFilter temp = mFactory.createRomanticFilter();
+        YfRomanticFilter temp = new YfRomanticFilter();
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfTenderFilter createTenderFilter(Context context, int filterIndex) {
-        YfTenderFilter temp = mFactory.createTenderFilter(context);
+        YfTenderFilter temp = new YfTenderFilter(context);
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfLookupFilter createFairyTaleFilter(Context context, int filterIndex) {
-        YfLookupFilter temp = mFactory.createLookupFilter(context,"filter/fairy_tale.png");
+        YfLookupFilter temp = new YfLookupFilter(context, "filter/fairy_tale.png");
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfAntiqueFilter createAntiqueFilter(int filterIndex) {
-        YfAntiqueFilter temp = mFactory.createAntiqueFilter();
+        YfAntiqueFilter temp = new YfAntiqueFilter();
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfWhiteCatFilter createWhiteCatFilter(int filterIndex) {
-        YfWhiteCatFilter temp = mFactory.createWhiteCatFilter();
+        YfWhiteCatFilter temp = new YfWhiteCatFilter();
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfLatteFilter createLatteFilter(int filterIndex) {
-        YfLatteFilter temp = mFactory.createLatteFilter();
+        YfLatteFilter temp = new YfLatteFilter();
         temp.setIndex(filterIndex);
         return temp;
     }
 
     public YfBlackWhiteFilter createBlackWhiteFilter(int filterIndex) {
-        YfBlackWhiteFilter temp = mFactory.createBlackWhiteFilter();
+        YfBlackWhiteFilter temp = new YfBlackWhiteFilter();
         temp.setIndex(filterIndex);
+        return temp;
+    }
+
+    public YfCrayonFilter createCrayonFilter(int filterIndex) {
+        YfCrayonFilter temp = new YfCrayonFilter();
+        temp.setIndex(filterIndex);
+        temp.setRenderInSpecificPts(true);
+        return temp;
+    }
+
+    public YfSketchFilter createSketchFilter(int filterIndex) {
+        YfSketchFilter temp = new YfSketchFilter();
+        temp.setIndex(filterIndex);
+        temp.setRenderInSpecificPts(true);
         return temp;
     }
 

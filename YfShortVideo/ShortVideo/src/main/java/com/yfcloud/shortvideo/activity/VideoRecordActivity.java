@@ -38,7 +38,7 @@ import com.yfcloud.shortvideo.widget.RoundButton;
 import com.yfcloud.shortvideo.widget.ScaleGLSurfaceView;
 import com.yfcloud.shortvideo.widget.VideoProgressView;
 import com.yfcloud.shortvideo.widget.YfPopupWindow;
-import com.yunfan.encoder.filter.AlphaBlendFilter;
+import com.yunfan.encoder.style.AlphaBlendFilter;
 import com.yunfan.encoder.filter.BaseFilter;
 import com.yunfan.encoder.filter.FaceUnityFilter;
 import com.yunfan.encoder.filter.YfBlurBeautyFilter;
@@ -814,7 +814,7 @@ public class VideoRecordActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onInfo(int what, int arg1, int arg2, Object obj) {
+        public void onInfo(int what, double arg1, double arg2, Object obj) {
 //            Log.d(TAG, "onInfo: " + what);
 //            switch (what) {
 //                case YfVodKit.INFO_MERGE_START:
