@@ -79,42 +79,12 @@ public class ChooseMusicActivity extends AppCompatActivity {
         lvMusic.setAdapter(musicAdapter);
 
         copyGifToSdCard();
-        clearCacheFiles();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        clearCacheFiles();
     }
 
-    /**
-     * 删除一些垃圾...
-     */
-    private void clearCacheFiles() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                File thumbnails = new File(Const.PATH_THUMBNAILS);
-                if (thumbnails.exists() && thumbnails.isDirectory()) {
-                    File[] files = thumbnails.listFiles();
-                    for (File f : files) {
-                        f.delete();
-                    }
-                }
 
-                File records = new File(Const.PATH_RECORD);
-                if (records.exists() && records.isDirectory()) {
-                    File[] files = records.listFiles();
-                    if (files.length > 50) {
-                        for (File f : files) {
-                            if (!f.getName().contains("test")||!f.getName().contains("mux")) {
-                                f.delete();
-                            }
-                        }
-                    }
-                }
-            }
-        }).start();
-    }
 }

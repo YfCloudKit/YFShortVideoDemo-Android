@@ -1144,6 +1144,7 @@ public class VideoFilterActivity extends AppCompatActivity implements YfControll
         mMediaKitCallback = null;
         mMediaKit = null;
         dismissPopupWindow();
+        Util.clearCacheFiles(true);
         super.onDestroy();
     }
 

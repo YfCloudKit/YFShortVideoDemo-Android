@@ -260,6 +260,7 @@ public class VideoCutActivity extends AppCompatActivity {
         closePlayer();
         mMediaKitCallback = null;
         mMediaKit = null;
+        Util.clearCacheFiles(true);
     }
 
     private void closePlayer() {
@@ -342,4 +343,5 @@ public class VideoCutActivity extends AppCompatActivity {
             startPlayback();
         }
     };
+
 }

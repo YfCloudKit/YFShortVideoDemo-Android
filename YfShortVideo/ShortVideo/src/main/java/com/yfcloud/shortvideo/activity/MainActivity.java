@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_music_short_video).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (YfAuthentication.getInstance().isAuthenticateSucceed())
+                if (YfAuthentication.getInstance().isAuthenticateSucceed()) {
                     startActivity(new Intent(MainActivity.this, SettingActivity.class));
-                else
+                    finish();
+                } else
                     Toast.makeText(MainActivity.this, "鉴权失败", Toast.LENGTH_SHORT).show();
 
             }

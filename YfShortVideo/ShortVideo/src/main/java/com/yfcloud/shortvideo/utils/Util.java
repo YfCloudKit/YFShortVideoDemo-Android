@@ -216,7 +216,7 @@ public class Util {
      * @param height     高度
      */
     public static boolean insertVideoToMediaStore(Context context, String filePath, long createTime,
-                                               int width, int height, long duration) {
+                                                  int width, int height, long duration) {
         if (filePath != null) {
             File file = new File(filePath);
             if (!file.exists() || !file.isFile()) {
@@ -280,6 +280,37 @@ public class Util {
             return System.currentTimeMillis();
         }
         return time;
+    }
+
+    /**
+     * 删除一些垃圾...
+     */
+    public static void clearCacheFiles(final boolean onlyThumbnails) {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                File thumbnails = new File(Const.PATH_THUMBNAILS);
+                if (thumbnails.exists() && thumbnails.isDirectory()) {
+                    File[] files = thumbnails.listFiles();
+                    for (File f : files) {
+                        f.delete();
+                    }
+                }
+                if (!onlyThumbnails) {
+                    File records = new File(Const.PATH_RECORD);
+                    if (records.exists() && records.isDirectory()) {
+                        File[] files = records.listFiles();
+                        if (files.length > 50) {
+                            for (File f : files) {
+                                if (!f.getName().contains("test") || !f.getName().contains("mux")) {
+                                    f.delete();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }).start();
     }
 
 }

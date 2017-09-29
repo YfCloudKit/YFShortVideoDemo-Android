@@ -172,6 +172,7 @@ public class SettingActivity extends AppCompatActivity {
         super.onDestroy();
         mMediaKitCallback = null;
         mYfMediaKit = null;
+        Util.clearCacheFiles(false);
     }
 
     int resolution = Const.RESOLUTION_360;
