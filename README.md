@@ -1,4 +1,13 @@
 # YfShortVideo
+
+* 该项目为**Android短视频demo**示例代码。该demo演示了分段录制、变速录制、视频裁剪、滤镜特效和时间特效等功能。
+* [短视频sdk文档地址](http://doc.yfcloud.com/index.php?s=/5&page_id=36)
+* [下载安装短视频demo](http://www.yfcloud.com/yunfansdkdownload/YFShortVideoSDK_Android_demo.apk)
+
+ ![短视频demo](https://i.imgur.com/Qnmer1v.png)
+
+---
+
 #### 1. 开发准备
 准备 Android 开发环境：安装有 ADT 插件的 Eclipse 开发环境或Android Studio
 
